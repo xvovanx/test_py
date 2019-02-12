@@ -95,32 +95,93 @@
 #     r = float(input())
 #     print(3.14 * r**2)
 
-# 1.12 -5
+# # 1.12 -5
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# max = 0
+# min = 0
+# ost = 0
+# if a >= b and b <= c:
+#     if a >= c:
+#         max = a
+#         min = b
+#         ost = c
+#     else:
+#         max = c
+#         min = b
+#         ost = a
+# elif (a >= b) and b >= c:
+#     max = a
+#     min = c
+#     ost = b
+# elif b >= a and (a <= c):
+#     if b >= c:
+#         max = b
+#         min = a
+#         ost = c
+#     else:
+#         max = c
+#         min = a
+#         ost = b
+# elif (b >= a) and a >= c:
+#     max = b
+#     min = c
+#     ost = a
+# print(max)
+# print(min)
+# print(ost)
+
+# 1.12 -6
 a = int(input())
-b = int(input())
-c = int(input())
-max = 0
-min = 0
-ost = 0
-if a > b and b < c:
-    max = a
-    min = b
-    ost = c
-elif a > b and b > c:
-    if a > c:
-        max = a
-        min = c
-        ost = b
-    else:
-        max = c
-        min = b
-        ost = c
-elif b > a and a < c:
-    max = b
-    min = a
-    ost = c
-print(max)
-print(min)
-print(ost)
+if a == 0:
+    print(str(a) + ' программистов')
+elif a == 1:
+    print(str(a) + ' программист')
+elif a == 2:
+    print(str(a) + ' программиста')
+elif a == 3:
+    print(str(a) + ' программиста')
+elif a == 4:
+    print(str(a) + ' программиста')
+elif a == 5:
+    print(str(a) + ' программистов')
+elif a == 6:
+    print(str(a) + ' программистов')
+elif a == 7:
+    print(str(a) + ' программистов')
+elif a == 8:
+    print(str(a) + ' программистов')
+elif a == 9:
+    print(str(a) + ' программистов')
+else:
+    if a // 10 > 10 and (a // 10) % 10 == 1 and a % 10 ==1:
+        print(str(a) + ' программистов')
+    elif a // 10 > 10 and a % 10 == 1:
+        print(str(a) + ' программист')
+    elif a // 10 > 10 and a % 10 > 1:
+        print(str(a) + ' программистов')
+    elif a // 10 <= 1:
+        print(str(a) + ' программистов')
+    elif a // 10 > 1 and a % 10 == 0:
+        print(str(a) + ' программистов')
+    elif a // 10 > 1 and a % 10 == 1:
+        print(str(a) + ' программист')
+    elif a // 10 > 1 and ((a % 10 > 1) and (a % 10 < 5)):
+        print(str(a) + ' программиста')
+    elif a // 10 > 1 and a % 10 >= 5:
+        print(str(a) + ' программистов')
+
+    a10 = a // 10
+    a11 = (a // 10) // 10
+    a1 = a % 10
+    print(a10, a11, a1)
+
+
+
+
+
+
+
 
 
