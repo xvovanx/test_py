@@ -132,56 +132,27 @@
 # print(min)
 # print(ost)
 
-# 1.12 -6
-a = int(input())
-if a == 0:
-    print(str(a) + ' программистов')
-elif a == 1:
-    print(str(a) + ' программист')
-elif a == 2:
-    print(str(a) + ' программиста')
-elif a == 3:
-    print(str(a) + ' программиста')
-elif a == 4:
-    print(str(a) + ' программиста')
-elif a == 5:
-    print(str(a) + ' программистов')
-elif a == 6:
-    print(str(a) + ' программистов')
-elif a == 7:
-    print(str(a) + ' программистов')
-elif a == 8:
-    print(str(a) + ' программистов')
-elif a == 9:
-    print(str(a) + ' программистов')
-else:
-    if a // 10 > 10 and (a // 10) % 10 == 1 and a % 10 ==1:
-        print(str(a) + ' программистов')
-    elif a // 10 > 10 and a % 10 == 1:
-        print(str(a) + ' программист')
-    elif a // 10 > 10 and a % 10 > 1:
-        print(str(a) + ' программистов')
-    elif a // 10 <= 1:
-        print(str(a) + ' программистов')
-    elif a // 10 > 1 and a % 10 == 0:
-        print(str(a) + ' программистов')
-    elif a // 10 > 1 and a % 10 == 1:
-        print(str(a) + ' программист')
-    elif a // 10 > 1 and ((a % 10 > 1) and (a % 10 < 5)):
-        print(str(a) + ' программиста')
-    elif a // 10 > 1 and a % 10 >= 5:
-        print(str(a) + ' программистов')
+# # 1.12 -6
+# a = int(input())
+# if a < 0:
+#     print('Ошибка, введите положительное число')
+# elif a % 10 == 1 and tp % 100 != 11:
+#     print(a, 'программист')
+# elif a % 10 >= 2 and a % 10 <= 4 and (a % 100 < 10 or a % 100 > 20):
+#     print(a, 'программиста')
+# else:
+#     print(a, 'программистов')
 
-    a10 = a // 10
-    a11 = (a // 10) // 10
-    a1 = a % 10
-    print(a10, a11, a1)
-
-
-
-
-
-
+# # 1.12 -7
+# a = input()
+# sum1 = 0
+# sum2 = 0
+# sum1 = int(a[0]) + int(a[1]) + int(a[2])
+# sum2 = int(a[3]) + int(a[4]) + int(a[5])
+# if sum1 == sum2:
+#     print('Счастливый')
+# else:
+#     print('Обычный')
 
 
 
