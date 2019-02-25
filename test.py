@@ -154,13 +154,21 @@
 # else:
 #     print('Обычный')
 
-# 2.1 -1
-i = 1
-s = 0
-while i != 0:
-    i = int(input())
-    s = s + i
-print(s)
+# # 2.1 -1
+# i = 1
+# s = 0
+# while i != 0:
+#     i = int(input())
+#     s = s + i
+# print(s)
 
-# 2.1 -2
-
+# # 2.1 -2
+# a = int(input())
+# b = int(input())
+# if a >= b:
+#     i = a
+# else:
+#     i = b
+# while (i % a == 0 and i % b != 0) or (i % a != 0 and i % b == 0) or (i % a != 0 and i % b != 0):
+#     i = i + 1
+# print(i)
