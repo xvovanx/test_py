@@ -154,5 +154,13 @@
 # else:
 #     print('Обычный')
 
+# 2.1 -1
+i = 1
+s = 0
+while i != 0:
+    i = int(input())
+    s = s + i
+print(s)
 
+# 2.1 -2
 
