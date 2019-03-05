@@ -172,3 +172,24 @@
 # while (i % a == 0 and i % b != 0) or (i % a != 0 and i % b == 0) or (i % a != 0 and i % b != 0):
 #     i = i + 1
 # print(i)
+
+# # 2.2 -1
+# a = True
+# s = ''
+# while a != False:
+#     b = int(input())
+#     if b > 100:
+#         break
+#     if b > 11:
+#         s = s + '\n' + str(b)
+# print(s)
+
+
+
+
+
+
+
+
+
+
