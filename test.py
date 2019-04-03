@@ -199,8 +199,18 @@
 #     print(end='\n')
 
 # 2.3 -2
-a = int(input()
-b = int(input()
+a = int(input())
+b = int(input())
+s = 0
+kol = 0
+for g in range(a, b+1):
+    if g % 3 == 0:
+        s = s + g
+        kol = kol + 1
+print(s/kol)
+
+
+
 
 
 
