@@ -205,15 +205,20 @@ s = 0
 kol = 0
 for g in range(a, b+1):
     if g % 3 == 0:
+        # print(str(g) + '\t')
         s = s + g
         kol = kol + 1
 print(s/kol)
 
-
-
-
-
-
+# 2.4 -1
+s = input()
+dl = len(s)
+GS = 0
+for i in s:
+    if i in ('G', 'g', 'C', 'c'):
+        GS = GS + 1
+pr = GS/dl * 100
+print(pr)
 
 
 
