@@ -243,3 +243,25 @@ sp = s.split()
 for i in sp:
     sum = sum + int(i)
 print(str(sum))    
+
+# 2.5 -2
+s = input()
+sp = []
+n = 0
+n1 = 0
+n2 = 0
+sp = s.split()
+ls = len(sp)
+if ls == 1:
+    print(sp)
+else:
+    for i in sp:
+        sum = 0
+        n1 = n - 1
+        n2 = n + 1
+        if n2 == ls:
+            sum = int(sp[n1]) + int(sp[0])
+        else:
+            sum = int(sp[n1]) + int(sp[n2])
+        n += 1
+        print(sum, end=' ')
