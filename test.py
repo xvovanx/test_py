@@ -234,3 +234,12 @@ for i in s:
         sum = 1
     x += 1
     j = s[x:x+1]
+
+# 2.5 -1    
+s = input()
+sp = []
+sum = 0
+sp = s.split()
+for i in sp:
+    sum = sum + int(i)
+print(str(sum))    
