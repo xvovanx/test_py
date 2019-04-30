@@ -220,5 +220,17 @@ for i in s:
 pr = GS/dl * 100
 print(pr)
 
-
-
+# 2.4 -2
+s = input()
+sum = 1
+x = 1
+j = s[x:x+1]
+for i in s:
+    if i in j:
+        sum += 1
+    else:
+        print(i, end='')
+        print(sum, end='')
+        sum = 1
+    x += 1
+    j = s[x:x+1]
