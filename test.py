@@ -198,27 +198,214 @@
 #         print(str(i*j),end='\t')
 #     print(end='\n')
 
-# 2.3 -2
-a = int(input())
-b = int(input())
-s = 0
-kol = 0
-for g in range(a, b+1):
-    if g % 3 == 0:
-        # print(str(g) + '\t')
-        s = s + g
-        kol = kol + 1
-print(s/kol)
+# # 2.3 -2
+# a = int(input())
+# b = int(input())
+# s = 0
+# kol = 0
+# for g in range(a, b+1):
+#     if g % 3 == 0:
+#         s = s + g
+#         kol = kol + 1
+# print(s/kol)
+#
+# # 2.4 -1
+# s = input()
+# dl = len(s)
+# GS = 0
+# for i in s:
+#     if i in ('G', 'g', 'C', 'c'):
+#         GS = GS + 1
+# pr = GS/dl * 100
+# print(pr)
 
-# 2.4 -1
-s = input()
-dl = len(s)
-GS = 0
-for i in s:
-    if i in ('G', 'g', 'C', 'c'):
-        GS = GS + 1
-pr = GS/dl * 100
-print(pr)
+# # 2.4 -2
+# s = 'aaaabbсaa'
+# #s = input()
+# n = 0
+# kod = ''
+# sum = 0
+# for i in s:
+#     if s[n] == s[n+1]:
+#        sum = sum + 1
+#     else:
+#         sum = 0
+#         kod = i + kod + str(sum)
+# print(kod)
+#
+# # 2.4 -3
+# s = input()
+# sp = []
+# n = 0
+# n1 = 0
+# n2 = 0
+# sp = s.split()
+# ls = len(sp)
+# if ls == 1:
+#     print(sp[0])
+# else:
+#     for i in sp:
+#         sum = 0
+#         n1 = n - 1
+#         n2 = n + 1
+#         if n2 == ls:
+#             sum = int(sp[n1]) + int(sp[0])
+#         else:
+#             sum = int(sp[n1]) + int(sp[n2])
+#         n += 1
+#         print(sum, end=' ')
+
+# # 2.4 -4
+# s = input()
+# sp = []
+# sp_new = []
+# n = 0
+# sp = s.split()
+# sp.sort()
+# for i in range(1, len(sp)):
+#     if sp[i] == sp[i-1]:
+#         sp_new.append(sp[i])
+#
+# sp_new = list(set(sp_new))
+# sp_new.sort()
+#
+# print (' '.join(sp_new))
+
+# # 2.6 -1
+# sum = 0
+# s = 0
+# sum_kvad = 0
+# while 0 == 0:
+#     s = int(input())
+#     sum = s + sum
+#     sum_kvad = s ** 2 + sum_kvad
+#     if sum == 0:
+#         break
+# print (sum_kvad)
+
+# # 2.6 -2
+# n = int(input())
+# sp_new = []
+# for i in range (1, n + 1):
+#     for k in range (0, i):
+#         sp_new.append(i)
+#
+# print (' '.join(map(str, sp_new[:n])))
+
+# # 2.6 -3
+# sl = input()
+# s = int(input())
+# n = 0
+# slp =sl.split()
+# slp_s = []
+# for i in slp:
+#     if s == int(slp[n]):
+#         slp_s.append(n)
+#     n +=1
+# if not slp_s:
+#     print ('Отсутствует')
+# else:
+#     print (' '.join(map(str, slp_s)))
+
+# # 2.6 -4
+# n = ''
+# m = []
+# while True:
+#     n = str(input())
+#     if n == 'end':
+#         break
+#     m.append([int(s) for s in n.split()])
+# li, lj = len(m), len(m[0])
+# new = [[sum([m[i-1][j], m[(i+1)%li][j], m[i][j-1], m[i][(j+1)%lj]]) for j in range(lj)] for i in range(li)]
+#
+# for i in range (li):
+#     for j in range (lj):
+#         print(new[i][j], end =' ')
+#     print()
+
+# 2.6 -5
 
 
+# # 3.1 -1
+# def f(x):
+#     if x > 2:
+#         return (x - 2) ** 2 + 1
+#     elif x <= -2:
+#         return 1 - (x + 2) ** 2
+#     else:
+#         return -x/2
+# print (f(1))
 
+# # 3.1 -2
+# def modify_list(l):
+#     lst = []
+#     n = 0
+#     for i in l:
+#         if i % 2 == 0:
+#             lst.append(int(i/2))
+#         n += 1
+#     l.clear()
+#     l[:] = lst
+#     return l
+# print (modify_list([1, 3, 5, 7]))
+
+# # 3.2 -1
+# d = {}
+# def update_dictionary(d, key, value):
+#     if key in d:
+#         d[key].append(value)
+#     elif key * 2 in d:
+#         d[key * 2].append(value)
+#     else:
+#         d[key * 2] = [value]
+# update_dictionary(d, 0, '-5')
+# print (d)
+# update_dictionary(d, 1, '-1')
+# print (d)
+# update_dictionary(d, 2, '-2')
+# print (d)
+# update_dictionary(d, 3, '-3')
+# print (d)
+
+# # 3.2 -2
+# s = []
+# d = {}
+# t = str(input())
+# for i in t.split():
+#     i = i.lower()
+#     s.append(i)
+#
+# s.sort()
+# for j in s:
+#     if j in d:
+#         sum = sum + 1
+#         d[j] = (sum)
+#     else:
+#         sum = 1
+#         d[j] = (sum)
+#
+# for x, y in d.items():
+#     print (x, y)
+
+# # 3.2 -3
+# def f(x): #для теста функция
+#     x = x + 1
+#     return x
+#
+# dict = {}
+# list = []
+# n = int(input())
+# for i in range(0, n):
+#     x = int(input())
+#     if x in dict:
+#         list.append(dict[x])
+#     else:
+#         dict[x] = f(x)
+#         list.append(dict[x])
+# print ('\n'.join(map(str, list)))
+
+
+# # 3.6 -1
+# import requests
+# r = requests.get('https://stepic.org/media/attachments/course67/3.6.2/383.txt')
+# print (r.text)
