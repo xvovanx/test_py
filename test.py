@@ -404,8 +404,201 @@
 #         list.append(dict[x])
 # print ('\n'.join(map(str, list)))
 
+# # 3.4 -1
+# strfull = ''
+# n = 0
+# with open ('dataset_3363_2.txt', 'r') as ftxt:
+#     str1 = ftxt.readline()
+#     for i in str1:
+#         if i.isalpha():
+#            strfull = strfull + i
+#         elif i.isdigit():
+#             if str1[n+1].isdigit():
+#                 num = i
+#                 num = num + str1[n+1]
+#                 for j in range (1, int(num)):
+#                     strfull = strfull + str1[n-1]
+#             if str1[n-1].isalpha() and str1[n+1].isalpha():
+#                 num = i
+#                 for k in range (1, int(num)):
+#                     strfull = strfull + str1[n-1]
+#         n += 1
+#     print (strfull)
+#     print (str1)
+
+# 3.4 -2
+# strfull = ''
+# sum = 0
+# str1 = ''
+# with open ('dataset_3363_3.txt', 'r') as ftxt:
+#     for striped_line in ftxt.readlines():
+#         str1 = str1 + striped_line
+#     s = []
+#     d = {}
+#     for i in str1.split():
+#         i = i.lower()
+#         s.append(i)
+#     s.sort()
+#     for j in s:
+#         if j in d:
+#             sum = sum + 1
+#             d[j] = (sum)
+#         else:
+#             sum = 1
+#             d[j] = (sum)
+#
+#     mode = max(d, key=d.get)
+#     if mode in d:
+#         print (mode, d[mode])
+#     print (s)
+#     print (d)
+
+# # 3.4 -3
+# stritog = []
+# sum = 0
+# sh = 0
+# math = 0
+# fiz = 0
+# rus = 0
+# str1 = []
+# s = []
+# with open ('dataset_3363_4.txt', 'r') as ftxt:
+#     for striped_line in ftxt.readlines():
+#         str1.append(striped_line.strip('\n'))
+#     for i in str1:
+#         n = []
+#         for j in i.split(';'):
+#             n.append(j)
+#         s.append(n)
+#     for sr_o in s:
+#         m = round(((int(sr_o[1]) + int(sr_o[2]) + int(sr_o[3]))/3),9)
+#         sh += 1
+#         math = math + int(sr_o[1])
+#         fiz = fiz + int(sr_o[2])
+#         rus = rus + int(sr_o[3])
+#         stritog.append(m)
+#         print (m)
+#     print (round(math/sh,9), round(fiz/sh,9), round(rus/sh,9))
+
+# # 3.5 -1
+# import math
+# r = float(input())
+# p = 2 * math.pi * r
+# print (p)
+
+# # 3.5 -2
+# import sys
+# print(*sys.argv[1:])
 
 # # 3.6 -1
 # import requests
-# r = requests.get('https://stepic.org/media/attachments/course67/3.6.2/383.txt')
-# print (r.text)
+# str1 = ''
+# lines = 0
+# with open('dataset_3378_2.txt', 'r') as ftxt:
+#     for striped_line in ftxt.readlines():
+#         str1 = striped_line
+# r = requests.get(str1.strip('\n'))
+# for i in r.text:
+#     if i == '\n':
+#         lines += 1
+# print(lines)
+
+# # 3.6 -2
+# import requests
+# str1 = ''
+# lines = 0
+# with open('dataset_3378_3.txt', 'r') as ftxt:
+#     for striped_line in ftxt.readlines():
+#         str1 = striped_line
+# r = requests.get(str1.strip('\n'))
+# file = r.text
+# while file[:2] != 'We':
+#     b = requests.get('https://stepic.org/media/attachments/course67/3.6.3/' + file)
+#     file = b.text
+#     print(file)
+# print(file)
+
+# 3.7 -2
+
+
+
+## 3.7 -2
+# d_dict = {}
+# l_dict = {}
+# dl_dict = {}
+# ld_dict = {}
+# result_code_str = []
+# result_code = []
+# d = input()
+# l = input()
+# code_str = input()
+# code = input()
+# n = 1
+# for i in d:
+#     d_dict[i] = n
+#     n +=1
+# n = 1
+# for j in l:
+#     l_dict[j] = n
+#     n +=1
+# dl_dict = dict(zip(d_dict, l_dict))
+# ld_dict = dict(zip(l_dict, d_dict))
+# for i_code in code_str:
+#     if i_code in dl_dict:
+#         result_code_str.append(dl_dict.get(i_code))
+# for j_code in code:
+#     if j_code in ld_dict:
+#         result_code.append(ld_dict.get(j_code))
+#
+# print(*result_code_str, sep='')
+# print(*result_code, sep='')
+
+
+# # 3.7 -3
+# d_dict = {}
+# l_dict = {}
+# result = []
+#
+# d = int(input())
+# for i in range(1, d+1):
+#     d_str = input()
+#     d_dict[d_str.lower()] = (i)
+#
+# l = int(input())
+# for j in range(1, l+1):
+#     l_str = input()
+#     for u in l_str.split():
+#         l_dict[u.lower()] = (j)
+#
+# for key in l_dict:
+#     if key not in d_dict:
+#         result.append(key)
+# print('\n'.join(result))
+
+# # 3.7 -5
+# # не сделал обопботку Пустого класса '-'
+# str1 = []
+# str2 = []
+# lines = 0
+# with open('dataset_3380_5.txt', 'r') as ftxt:
+#     for striped_line in ftxt.readlines():
+#         str1.append(striped_line.strip('\n').split('\t'))
+# print(str1)
+# rost = 0
+# ch = 0
+# sred = 0
+# d = {}
+# for str_line in str1:
+#     if int(str_line[0]) not in d:
+#        d[int(str_line[0])] = list()
+#        d[int(str_line[0])].append(int(str_line[2]))
+#        d[int(str_line[0])].append(1)
+#     else:
+#        d[int(str_line[0])][0] = d[int(str_line[0])][0] + int(str_line[2])
+#        d[int(str_line[0])][1] = d[int(str_line[0])][1] + 1
+# for key in sorted(d.keys()):
+#     print(key, d[key])
+# print('_____')
+# for key in sorted(d.keys()):
+#     d[key] = d[key][0]/d[key][1]
+#     print(key, d[key])
